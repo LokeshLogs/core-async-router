@@ -1,0 +1,7 @@
+{
+  "event_id": "12345",
+  "source": "whatsapp",
+  "data": {
+    "text": "Hello AI Agent"
+  }
+}
