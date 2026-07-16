@@ -2,7 +2,7 @@
 
 An uncrashable, high-throughput, asynchronous backend engine designed to handle thousands of concurrent customer webhook requests (such as real-time multi-modal streams from the WhatsApp Business API or Twilio SMS) without dropping a single packet.
 
-## 🛠️ The Tech Stack
+## The Tech Stack
 * **FastAPI**: Modern, high-performance web framework utilizing asynchronous `async/await` patterns.
 * **Celery**: Distributed task queue used to isolate and run CPU-heavy or high-latency processing tasks.
 * **Redis**: In-memory message broker acting as the high-speed communication bridge between the API gateway and background workers.
@@ -10,7 +10,7 @@ An uncrashable, high-throughput, asynchronous backend engine designed to handle 
 
 ---
 
-## 📐 System Architecture
+## System Architecture
 
 1. **Client / Webhook Source** (e.g., Twilio, WhatsApp) fires a payload to `/webhook`.
 2. **FastAPI Gateway** validates the incoming data schema instantly using Pydantic.
@@ -20,7 +20,7 @@ An uncrashable, high-throughput, asynchronous backend engine designed to handle 
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 ### Prerequisites
 Make sure you have [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running.
